@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/aeaf109180.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&family=Whisper&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Whisper&display=swap" rel="stylesheet">
+
+        <title>Gallery Photo</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+            <i class="fa-solid fa-camera-retro"></i>
+            <h1>Midori's Collection</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li id="home"><a href="#home">Home</a></li>
+                    <li id="about"><a href="#about">About</a></li>
+                    <li id="contact"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <body>
+            <div class="hello">
+                <h2>Hello!</h2>
+                <h3> Welcome to Midori's Photo Gallery! </h3>
+                <button>ADD PHOTO</button>
+            </div>
+            <div class="add-image-wrapper">
+            <h2>Insert a new photo</h2>
+            <form action="/">
+                <label for="new-image-address">
+                    <input id="new-image-address" class="input-image" type="url" id="image-url" name="image-url" placeholder="Image URL" required>
+                </label>
+                <button type="submit">Add</button>
+                <button id="cancel-button" type="reset">Cancel</button>
+            </form>
+        </div>
+        <ul class="collection-wrapper">
+            <li>
+                <img src="images/image (1).jpg" alt="">            
+                <a href="images/image (1).jpg" target="_blank">
+                    See High Res Image
+                </a>
+            </li>
+            <li>
+                <img src="images/image (2).jpg" alt="">            
+                <a href="images/image (2).jpg" target="_blank"> 
+                    See High Res Image
+                </a>
+            </li>
+            <li>
+                <img src="images/image (3).jpg" alt="">            
+                <a href="images/image (3).jpg" target="_blank"> 
+                    See High Res Image
+                </a>
+            </li>
+            <li>
+                <img src="images/image (4).jpg" alt="">            
+                <a href="images/image (4).jpg" target="_blank"> 
+                    See High Res Image
+                </a>
+            </li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body> 
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-default: "Red Hat Display", sans-serif;
+    --dark-gray: rgb(54, 52, 52);
+    --light-gray: rgb(161, 161, 161);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    font-family: var(--font-default);
+}
+
+.wrapper h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.wrapper i {
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header li {
+    padding: 4px 14px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.nav a:hover{
+    border-bottom: 2px solid rgb(0, 128, 64);
+}
+
+header h1 {
+    font-size: 1.2rem;
+}
+
+/* BODY */
+
+body {
+    font-family: var(--font-default);
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    font-family: var(--font-default);
+}
+
+.hello {
+    margin: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Homemade Apple", cursive;
+    color: var(--dark-gray);
+}
+
+.hello h2 {
+    margin: 0;
+}
+
+.hello h3 {
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0;
+    bottom: 40px;
+    color: var(--light-gray)
+}
+
+.hello button {
+    padding: 5px;
+    position: relative;
+    bottom: 50px;
+}
+
+button:hover {
+    color: var(--light-gray);
+    border-color: var(--light-gray);
+    cursor: pointer;
+}
+
+form button {
+    margin-left: 6px;
+    padding: 5px 10px;
+}
+
+.input-image {
+    font-family: var(--font-default);
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid var(--dark-gray)
+}
+
+.add-image-wrapper {
+    position: relative;
+    bottom: 50px;
+    background-color: rgb(214, 214, 214);
+    padding: 70px;
+    display: none;
+}
+
+.collection-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection-wrapper img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+}
+
+.collection-wrapper li {
+    display: relative;
+    list-style: none;
+    margin: 2px;
+    max-height: 180px;
+    position: relative;
+}
+
+.collection-wrapper a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    background-color: rgb(0,0,0,.7);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.collection-wrapper a:hover{
+    transition: all ease .5s;
+    opacity: 1;
+}
